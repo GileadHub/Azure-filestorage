@@ -1,0 +1,81 @@
+2025-10-22 12:08:08 - Starting Azure Storage deployment...
+2025-10-22 12:08:08 - Azure CLI is installed.
+2025-10-22 12:08:11 - User is logged in to Azure CLI.
+2025-10-22 12:08:11 - Creating Resource Group: cloud-storage-20251022120811
+2025-10-22 12:08:15 - Failed to create resource group.
+2025-10-22 12:13:07 - Starting Azure Storage deployment...
+2025-10-22 12:13:07 - Azure CLI is installed.
+2025-10-22 12:13:09 - User is logged in to Azure CLI.
+2025-10-22 12:13:09 - Creating Resource Group: cloud-storage-20251022121309
+2025-10-22 12:13:19 - Creating Storage Account: storage20251022121309
+2025-10-22 12:13:25 - Failed to create storage account.
+2025-10-22 12:15:10 - Starting Azure Storage deployment...
+2025-10-22 12:15:10 - Azure CLI is installed.
+2025-10-22 12:15:13 - User is logged in to Azure CLI.
+2025-10-22 12:15:13 - Creating Resource Group: cloud-storage-20251022121513
+2025-10-22 12:15:24 - Creating Storage Account: storage20251022121513
+2025-10-22 12:15:27 - Failed to create storage account.
+2025-10-22 18:07:49 - Starting Azure Storage deployment...
+2025-10-22 18:07:49 - Azure CLI is installed.
+2025-10-22 18:07:52 - User is logged in to Azure CLI.
+2025-10-22 18:07:52 - Creating Resource Group: GROUP2TECH-20251022180752
+2025-10-22 18:07:58 - Creating Storage Account: GROUP2STORAGE20251022180752
+2025-10-22 18:08:12 - Failed to create storage account.
+2025-10-22 18:12:58 - Starting Azure Storage deployment...
+2025-10-22 18:12:58 - Azure CLI is installed.
+2025-10-22 18:13:00 - User is logged in to Azure CLI.
+2025-10-22 18:13:00 - Creating Resource Group: GROUP2TECH-20251022181300
+2025-10-22 18:13:10 - Creating Storage Account: GROUP2STORAGE20251022181300
+2025-10-22 18:13:22 - Failed to create storage account.
+2025-10-22 18:14:23 - Starting Azure Storage deployment...
+2025-10-22 18:14:24 - Azure CLI is installed.
+2025-10-22 18:14:25 - User is logged in to Azure CLI.
+2025-10-22 18:14:26 - Creating Resource Group: GROUP2TECH-20251022181426
+2025-10-22 18:14:42 - Creating Storage Account: group2store20251022181426
+2025-10-22 18:14:50 - Failed to create storage account.
+2025-10-22 18:16:09 - Starting Azure Storage deployment...
+2025-10-22 18:16:09 - Azure CLI is installed.
+2025-10-22 18:16:11 - User is logged in to Azure CLI.
+2025-10-22 18:16:11 - Creating Resource Group: GROUP2TECH-20251022181611
+2025-10-22 18:16:17 - Creating Storage Account: group2store-20251022181611
+2025-10-22 18:16:29 - Failed to create storage account.
+2025-10-22 18:17:14 - Starting Azure Storage deployment...
+2025-10-22 18:17:14 - Azure CLI is installed.
+2025-10-22 18:17:16 - User is logged in to Azure CLI.
+2025-10-22 18:17:16 - Creating Resource Group: GROUP2TECH-20251022181716
+2025-10-22 18:17:24 - Creating Storage Account: g2store-20251022181716
+2025-10-22 18:17:35 - Failed to create storage account.
+2025-10-22 18:18:36 - Starting Azure Storage deployment...
+2025-10-22 18:18:36 - Azure CLI is installed.
+2025-10-22 18:18:39 - User is logged in to Azure CLI.
+2025-10-22 18:18:39 - Creating Resource Group: GROUP2TECH-20251022181839
+2025-10-22 18:18:45 - Creating Storage Account: g2store20251022181839
+2025-10-22 18:19:17 - Creating Blob Container: g2files20251022181839
+2025-10-22 18:19:27 - Configurations saved to /c/Users/USER/Desktop/CAPSTONE/storage/azure_storage.config
+2025-10-22 18:19:27 - Deployment completed successfully.
+2025-10-22 18:49:47 - Configurations loaded from /c/Users/USER/Desktop/CAPSTONE/storage/azure_storage.config
+2025-10-22 18:50:03 - Failed to retrieve storage account key.
+2025-10-22 18:50:03 - Uploading file test-file.txt -> test-file.txt to container g2files20251022181839
+2025-10-22 18:51:31 - Failed to upload file.
+2025-10-22 19:01:25 - Configurations loaded from /c/Users/USER/Desktop/CAPSTONE/storage/azure_storage.config
+2025-10-22 19:01:30 - Uploading file test-file.txt -> test-file.txt to container g2files20251022181839
+2025-10-22 19:01:34 - File uploaded Successfully to: https://g2store20251022181839.blob.core.windows.net/g2files20251022181839/test-file.txt
+2025-10-22 19:12:00 - Configurations loaded from /c/Users/USER/Desktop/CAPSTONE/storage/azure_storage.config
+2025-10-22 19:12:06 - Listing files in container: g2files20251022181839
+2025-10-22 19:12:06 - Using output format: table
+2025-10-22 19:13:01 - Configurations loaded from /c/Users/USER/Desktop/CAPSTONE/storage/azure_storage.config
+2025-10-22 19:13:07 - Downloading blob test-file.txt from container g2files20251022181839 to ./test-file.txt
+2025-10-22 19:13:11 - File downloaded successfully to: ./test-file.txt
+2025-10-22 19:16:24 - Configurations loaded from /c/Users/USER/Desktop/CAPSTONE/storage/azure_storage.config
+2025-10-22 19:16:35 - Downloading blob test-file.txt from container g2files20251022181839 to downloaded-file.txt
+2025-10-22 19:16:46 - File downloaded successfully to: downloaded-file.txt
+2025-10-22 19:19:02 - Failed to retrieve storage account key.
+2025-10-22 19:19:02 - Deleting file: text-file.txt from container 
+2025-10-22 19:19:02 - Deleting file: text-file.txt from container 
+2025-10-22 19:19:06 - Failed to delete file.
+2025-10-22 19:24:43 - Configurations loaded from /c/Users/USER/Desktop/CAPSTONE/storage/azure_storage.config
+2025-10-22 19:24:43 - Deleting file: text-file.txt from container g2files20251022181839
+2025-10-22 19:24:54 - Failed to delete file.
+2025-10-22 19:26:20 - Configurations loaded from /c/Users/USER/Desktop/CAPSTONE/storage/azure_storage.config
+2025-10-22 19:26:20 - Deleting file: test-file.txt from container g2files20251022181839
+2025-10-22 19:26:28 - File test-file.txt deleted successfully.
