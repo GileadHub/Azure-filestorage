@@ -51,7 +51,7 @@ jobs:
         ./azure-storage.sh info capstone-project-info.txt
         
     - name: Upload Logs and Artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: deployment-results
         path: |
