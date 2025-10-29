@@ -21,7 +21,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
         
     - name: Make script executable
-      run: chmod +x azure-storage.sh
+      run: chmod +x azurestorage.sh
       
     - name: Deploy Azure Storage
       run: |
