@@ -1,0 +1,66 @@
+name: Deploy and Test Cloud Storage
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy-and-test:
+    runs-on: ubuntu-latest
+    environment: 
+      name: production
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Setup Azure CLI
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        
+    - name: Make script executable
+      run: chmod +x azure-storage.sh
+      
+    - name: Deploy Azure Storage
+      run: |
+        ./azure-storage.sh deploy
+      
+    - name: Test File Operations
+      run: |
+        # Create test files
+        echo "Test file from GitHub Actions - $(date)" > github-test.txt
+        echo "Project: Cloud File Storage - Group 2" > project-info.txt
+        
+        # Upload files
+        ./azure-storage.sh upload github-test.txt
+        ./azure-storage.sh upload project-info.txt "capstone-project-info.txt"
+        
+        # List files
+        echo "=== Listing uploaded files ==="
+        ./azure-storage.sh list
+        
+        # Download and verify
+        ./azure-storage.sh download github-test.txt downloaded-test.txt
+        echo "=== Downloaded file content ==="
+        cat downloaded-test.txt
+        
+        # Get file info
+        echo "=== File information ==="
+        ./azure-storage.sh info capstone-project-info.txt
+        
+    - name: Upload Logs and Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: deployment-results
+        path: |
+          *.log
+          *.config
+          *.txt
+        retention-days: 7
+        
+    - name: Show Operation Logs
+      run: |
+        echo "=== Storage Operations Log ==="
+        ./azure-storage.sh logs
