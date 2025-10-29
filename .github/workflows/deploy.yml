@@ -25,7 +25,7 @@ jobs:
       
     - name: Deploy Azure Storage
       run: |
-        ./azure-storage.sh deploy
+        ./azurestorage.sh deploy
       
     - name: Test File Operations
       run: |
@@ -34,21 +34,21 @@ jobs:
         echo "Project: Cloud File Storage - Group 2" > project-info.txt
         
         # Upload files
-        ./azure-storage.sh upload github-test.txt
-        ./azure-storage.sh upload project-info.txt "capstone-project-info.txt"
+        ./azurestorage.sh upload github-test.txt
+        ./azurestorage.sh upload project-info.txt "capstone-project-info.txt"
         
         # List files
         echo "=== Listing uploaded files ==="
-        ./azure-storage.sh list
+        ./azurestorage.sh list
         
         # Download and verify
-        ./azure-storage.sh download github-test.txt downloaded-test.txt
+        ./azurestorage.sh download github-test.txt downloaded-test.txt
         echo "=== Downloaded file content ==="
         cat downloaded-test.txt
         
         # Get file info
         echo "=== File information ==="
-        ./azure-storage.sh info capstone-project-info.txt
+        ./azurestorage.sh info capstone-project-info.txt
         
     - name: Upload Logs and Artifacts
       uses: actions/upload-artifact@v4
@@ -63,4 +63,4 @@ jobs:
     - name: Show Operation Logs
       run: |
         echo "=== Storage Operations Log ==="
-        ./azure-storage.sh logs
+        ./azurestorage.sh logs
